@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madsaif</title>
+    <link rel="shortcut icon" href="ms.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Using a placeholder logo image - replace with actual logo -->
+                <img src="ms.jpg" alt="Madsaif Logo" class="logo-img">
+                <div class="logo-text">Mad<span>Saif</span></div>
+            </div>
+            
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#home" class="nav-link active" data-target="home">Home</a></li>
+                    <li><a href="#products" class="nav-link" data-target="products">Products</a></li>
+                    <li><a href="#features" class="nav-link" data-target="features">Why Choose Us</a></li>
+                    <li><a href="#about" class="nav-link" data-target="about">About Us</a></li>
+                    <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero active" id="home">
+        <div class="container">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            
+            <h1>We Build <span>Smart Software Solutions</span></h1>
+            <p>Fast • Secure • Modern technology solutions for businesses of all sizes. We create digital experiences that help your business grow and succeed.</p>
+            
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary nav-link" data-target="contact">Contact Us</a>
+                <a href="#products" class="btn btn-secondary nav-link" data-target="products">Our Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Products</h2>
+                <p>Explore our innovative software products designed to help your business thrive in the digital age.</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=400" alt="E-Commerce Platform">
+                    </div>
+                    <div class="product-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-featured online shopping platform with secure payment integration, inventory management, and customer analytics.</p>
+                        <a href="store.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400" alt="Business Analytics Dashboard">
+                    </div>
+                    <div class="product-content">
+                        <h3>Business Analytics Dashboard</h3>
+                        <p>A comprehensive dashboard for data visualization and business intelligence to drive informed decisions.</p>
+                        <a href="bad.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400" alt="Mobile App Suite">
+                    </div>
+                    <div class="product-content">
+                        <h3>Mobile App Suite</h3>
+                        <p>A collection of mobile applications for various business needs including CRM, task management, and communication.</p>
+                        <a href="apps.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Madsaif?</h2>
+                <p>We stand out from the competition with our commitment to quality, innovation, and customer satisfaction.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Experienced Developers</h3>
+                        <p>Our team consists of highly skilled developers with years of experience in building robust software solutions.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Modern Technology</h3>
+                        <p>We use the latest technologies and frameworks to build scalable, secure, and future-proof applications.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Affordable Pricing</h3>
+                        <p>We offer competitive pricing without compromising on quality, ensuring you get the best value for your investment.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Fast Support</h3>
+                        <p>Our dedicated support team is available 24/7 to address any issues and ensure your software runs smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Madsaif</h2>
+                <p>Madsaif was founded with a simple mission: to deliver high-quality software solutions that help businesses grow and succeed in the digital era. We believe in the power of technology to transform ideas into reality.</p>
+                <p>Our team of dedicated developers, designers, and project managers work together to create innovative solutions that meet our clients' unique needs. We focus on building long-term relationships based on trust, transparency, and exceptional results.</p>
+                <p>With years of experience across various industries, we have the expertise to tackle complex challenges and deliver software that not only meets but exceeds expectations.</p>
+                
+                <div style="margin-top: 40px;">
+                    <h3 style="color: var(--yellow); margin-bottom: 20px;">Our Vision & Mission</h3>
+                    <p><strong>Vision:</strong> To become the leading software solution provider in the region, known for innovation and excellence.</p>
+                    <p><strong>Mission:</strong> To deliver cutting-edge software solutions that empower businesses and drive digital transformation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us for any inquiries or support. We're here to help!</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-item-content">
+                                <h4>Email</h4>
+                                <p>info@madsaif.com</p>
+                                <p>support@madsaif.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-item-content">
+                                <h4>Phone</h4>
+                                <p>+880 1739 650594</p>
+                                <p>+880 1733809517</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-item-content">
+                                <h4>Address</h4>
+                                <p>123 Software Street, Tech City</p>
+                                <p>Dinajpur, Bangladesh</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-section">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-info-cards">
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h4>Business Hours</h4>
+                        <p>Sunday - Thursday: 9AM - 6PM</p>
+                        <p>Friday - Saturday: Closed</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-headset"></i>
+                        <h4>Support</h4>
+                        <p>24/7 Technical Support</p>
+                        <p>Email & Phone Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                    <div class="footer-logo">Mad<span>Saif</span></div>
+                    <p>We build smart software solutions that help businesses grow and succeed in the digital age. Our team is dedicated to delivering high-quality, innovative solutions.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" class="nav-link" data-target="home">Home</a></li>
+                        <li><a href="#products" class="nav-link" data-target="products">Products</a></li>
+                        <li><a href="#features" class="nav-link" data-target="features">Why Choose Us</a></li>
+                        <li><a href="#about" class="nav-link" data-target="about">About Us</a></li>
+                        <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> info@madsaif.com</p>
+                    <p><i class="fas fa-phone"></i> +880 1739 650594</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dinajpur, Bangladesh</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> Madsaif. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
