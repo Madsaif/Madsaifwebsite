@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Muhammad Saifullah Mahin | Founder & CEO of MadSaif</title>
+
+    <meta name="description"
+    content="Official founder page of Muhammad Saifullah Mahin, Founder & CEO of MadSaif. Game developer, software creator and futuristic tech entrepreneur from Bangladesh.">
+
+    <meta name="keywords" content="Muhammad Saifullah Mahin, Mahin, MadSaif founder,CEO of madsaif, mahin, saif khan, saifullah, ms mahin,  Founder of MadSaif, CEO of MadSaif, Muhammad Saifullah Mahin CEO, software entrepreneur, game developer, app developer, web developer, Bangladeshi developer, startup founder, tech entrepreneur, software engineer, indie game developer, futuristic technology creator, browser game developer, SaaS founder, digital innovator, creative developer, technology startup founder, modern software creator, web application developer, game studio founder, app creator, software company CEO, MadSaif CEO, innovative entrepreneur, tech company founder, software development expert, digital creator, young entrepreneur, software architect, frontend developer, JavaScript developer, HTML CSS JavaScript developer, business technology innovator">
+
+    <meta name="author" content="Muhammad Saifullah Mahin">
+
+    <link rel="canonical" href="https://yourdomain.com/founder.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+    content="Muhammad Saifullah Mahin | Founder & CEO of MadSaif">
+
+    <meta property="og:description"
+    content="Founder of MadSaif focused on futuristic games, apps and AI innovation.">
+
+    <meta property="og:image"
+    content="https://yourdomain.com/founder.jpg">
+
+    <meta property="og:type" content="profile">
+
+    <meta property="og:url"
+    content="https://yourdomain.com/founder.html">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="ms.jpg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- GOOGLE PERSON SCHEMA -->
+    <script type="application/ld+json">
+    {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Muhammad Saifullah Mahin",
+    "url":"https://yourdomain.com/founder.html",
+    "image":"https://yourdomain.com/founder.jpg",
+    "jobTitle":"Founder & CEO",
+    "worksFor":{
+    "@type":"Organization",
+    "name":"MadSaif"
+    },
+    "description":"Muhammad Saifullah Mahin is the founder and CEO of MadSaif.",
+    "sameAs":[
+    "https://facebook.com/yourprofile",
+    "https://github.com/yourprofile",
+    "https://linkedin.com/in/yourprofile"
+    ]
+    }
+    </script>
+
+<style>
+
+/* Founder Page */
+
+.founder-hero{
+    display:flex;
+    gap:60px;
+    align-items:center;
+    flex-wrap:wrap;
+    background:transparent;
+    padding:60px 0;
+    margin:20px 0 60px;
+    min-height:75vh;
+}
+
+.founder-avatar{
+    order:2;
+    flex-shrink:0;
+    width:340px;
+    height:340px;
+    border-radius:18px;
+    overflow:hidden;
+    background:linear-gradient(135deg,var(--pink),var(--yellow));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    box-shadow:
+    0 0 30px rgba(255,0,140,0.25),
+    0 0 70px rgba(255,214,0,0.08);
+}
+
+.founder-avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.founder-info{
+    order:1;
+    flex:1;
+    min-width:320px;
+}
+
+.founder-badge{
+    display:inline-block;
+    padding:10px 18px;
+    border:1px solid var(--pink);
+    border-radius:50px;
+    color:var(--pink);
+    margin-bottom:22px;
+    background:rgba(255,0,140,0.08);
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+.founder-info h1{
+    font-size:52px;
+    line-height:1.1;
+    margin-bottom:22px;
+}
+
+.founder-info h1 span{
+    display:block;
+    font-size:24px;
+    color:var(--pink);
+    margin-top:12px;
+}
+
+.founder-info p{
+    font-size:17px;
+    line-height:1.9;
+    color:#000;
+    margin-bottom:18px;
+    max-width:760px;
+}
+
+.founder-stats{
+    display:flex;
+    gap:25px;
+    margin:35px 0;
+    flex-wrap:wrap;
+}
+
+.founder-stats div{
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.06);
+    padding:22px 26px;
+    border-radius:16px;
+    min-width:190px;
+    transition:0.3s;
+}
+
+.founder-stats div:hover{
+    transform:translateY(-5px);
+    border-color:var(--pink);
+}
+
+.founder-stats strong{
+    color:var(--pink);
+    font-size:28px;
+    display:block;
+    margin-bottom:8px;
+}
+
+.founder-extra{
+    margin-top:10 px;
+    padding-top:10 px;
+    border-top:1px solid rgba(255,255,255,0.08);
+}
+
+.founder-extra h2{
+    font-size:32px;
+    margin-bottom:22px;
+}
+
+.founder-extra p{
+    color:#000;
+    line-height:1.9;
+    margin-bottom:18px;
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .founder-hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .founder-avatar{
+        order:1;
+        width:280px;
+        height:280px;
+    }
+
+    .founder-info{
+        order:2;
+    }
+
+    .founder-info h1{
+        font-size:40px;
+    }
+
+    .founder-info h1 span{
+        font-size:20px;
+    }
+
+    .founder-stats{
+        justify-content:center;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container header-container">
+
+        <div class="logo">
+            <img src="ms.jpg" class="logo-img">
+
+            <div class="logo-text">
+                Mad<span>Saif</span>
+            </div>
+        </div>
+
+        <div class="header-actions">
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <nav>
+            <ul id="navMenu">
+
+                <li>
+                    <a href="index.html"
+                    class="nav-link"
+                    data-page="index">
+                    Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="apps.html"
+                    class="nav-link"
+                    data-page="apps">
+                    Apps
+                    </a>
+                </li>
+
+                <li>
+                    <a href="games.html"
+                    class="nav-link"
+                    data-page="games">
+                    Games
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html"
+                    class="nav-link"
+                    data-page="about">
+                    About
+                    </a>
+                </li>
+<li><a href="founder.html" class="nav-link" data-page="founder">Founder Info</a></li>
+                <li>
+                    <a href="contact.html"
+                    class="nav-link"
+                    data-page="contact">
+                    Contact
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<section class="page-section" style="padding-top:70px">
+
+    <div class="container">
+
+        
+
+        <div class="founder-hero">
+
+            <!-- LEFT -->
+
+            <div class="founder-info">
+
+                <div class="founder-badge">
+                    Founder • Developer • Visionary
+                </div>
+
+                <h1>
+                    Muhammad Saifullah Mahin
+
+                    <span>
+                        Founder & CEO of MadSaif
+                    </span>
+                </h1>
+
+                <p>
+                    Muhammad Saifullah Mahin is a Bangladeshi software creator,
+                    game developer, and futuristic tech entrepreneur focused on
+                    building modern digital experiences through apps, games,
+                    AI tools, and smart software systems.
+                </p>
+
+                <p>
+                    He founded MadSaif with a vision to create innovative technology
+                    products that combine minimalist design, performance,
+                    creativity, and futuristic user experiences.
+                </p>
+
+                <p>
+                    His long-term goal is to build a globally recognized digital
+                    ecosystem from Bangladesh through gaming, software innovation,
+                    and next-generation technology.
+                </p>
+
+                <div class="founder-stats">
+
+                    <div>
+                        <strong>Apps</strong>
+                        Future Software Ecosystem
+                    </div>
+
+                    <div>
+                        <strong>Games</strong>
+                        Creative Gaming Vision
+                    </div>
+
+                    <div>
+                        <strong>AI</strong>
+                        Next-Generation Innovation
+                    </div>
+
+                </div>
+
+                <a href="contact.html" class="btn btn-primary">
+                    Connect via Email
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="founder-avatar">
+
+                <img
+                src="founder.jpg"
+                alt="Muhammad Saifullah Mahin Founder and CEO of MadSaif"
+                loading="lazy"
+                width="500"
+                height="500">
+
+            </div>
+
+        </div>
+
+        <!-- EXTRA SECTION -->
+
+        <div class="founder-extra">
+
+            <h2>
+                About The Founder
+            </h2>
+
+            <p>
+                With a strong passion for futuristic software,
+                clean design, gaming, and innovation,
+                Muhammad Saifullah Mahin continues working toward
+                building advanced digital products that combine creativity,
+                technology, and user-focused experiences.
+            </p>
+
+            <p>
+                His vision for MadSaif goes beyond traditional software development.
+                The long-term roadmap includes games, AI-powered systems,
+                digital platforms, and a complete modern technology ecosystem
+                designed for the future generation.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-container">
+
+            <div class="footer-about">
+
+                <div class="footer-logo">
+                    Mad<span>Saif</span>
+                </div>
+
+                <p>
+                    We build smart software solutions that help businesses
+                    grow and succeed in the digital age.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="apps.html">Apps</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="about.html">About</a></li>
+					<li><a href="founder.html">Founder Info</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <h4>
+                    Contact Info
+                </h4>
+
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    info.madsaif@gmail.com
+                </p>
+
+                <p>
+                    <i class="fas fa-phone"></i>
+                    +880 1828-252041
+                </p>
+
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    Dinajpur, Bangladesh
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            <p>
+                &copy; <span id="currentYear"></span> MadSaif.
+                All Rights Reserved.
+            </p>
+
+            <p style="margin-top:12px;">
+                Designed under the vision of Muhammad Saifullah Mahin.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
