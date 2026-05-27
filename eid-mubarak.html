@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eid Mubarak</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+overflow:hidden;
+background: radial-gradient(circle at top,#0b1220,#020617 75%);
+}
+
+/* START SCREEN */
+
+.start{
+position:fixed;
+inset:0;
+background:#020617;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:999;
+}
+
+.start h1{
+color:white;
+font-size:50px;
+text-shadow:0 0 20px cyan;
+}
+
+.start button{
+margin-top:20px;
+padding:15px 40px;
+border:none;
+border-radius:40px;
+font-size:20px;
+cursor:pointer;
+background:linear-gradient(45deg,#00ffd5,#00ff95);
+box-shadow:0 0 20px #00ffd5;
+}
+
+/* AUDIO (hidden) */
+audio{display:none}
+
+/* SKY */
+
+.stars{
+position:absolute;
+width:100%;
+height:100%;
+}
+
+.star{
+position:absolute;
+width:2px;
+height:2px;
+background:white;
+border-radius:50%;
+animation:twinkle 3s infinite;
+}
+
+@keyframes twinkle{
+0%,100%{opacity:.2}
+50%{opacity:1}
+}
+
+/* MOON */
+
+.moon{
+position:absolute;
+top:60px;
+right:80px;
+width:160px;
+height:160px;
+background:#ffe082;
+border-radius:50%;
+box-shadow:0 0 40px #ffe082;
+opacity:0;
+transition:2s;
+}
+
+/* MOSQUE (MORE HIGHLIGHTED) */
+
+.mosque{
+position:absolute;
+bottom:-300px;
+width:100%;
+height:320px;
+background:linear-gradient(to top,#0f172a,#020617);
+clip-path:polygon(
+0 100%,0 60%,10% 60%,15% 40%,20% 60%,30% 60%,35% 25%,
+40% 60%,50% 60%,55% 35%,60% 60%,70% 60%,75% 40%,
+80% 60%,100% 60%,100% 100%
+);
+transition:2s;
+box-shadow:0 -20px 80px rgba(0,255,213,0.15);
+}
+
+/* glowing minaret effect */
+.mosque::after{
+content:'';
+position:absolute;
+width:100%;
+height:100%;
+top:0;
+left:0;
+background:radial-gradient(circle at top,rgba(0,255,213,0.15),transparent);
+}
+
+/* COW */
+
+.cow{
+position:absolute;
+bottom:70px;
+left:-200px;
+width:120px;
+height:70px;
+background:white;
+border-radius:20px;
+animation:walk 12s linear infinite;
+}
+
+@keyframes walk{
+0%{left:-200px}
+100%{left:110%}
+}
+
+/* TEXT */
+
+.text{
+position:absolute;
+width:100%;
+text-align:center;
+bottom:-200px;
+opacity:0;
+transition:2s;
+color:white;
+}
+
+.text h1{
+font-size:85px;
+text-shadow:0 0 20px #00ffd5,0 0 60px #00ffd5;
+}
+
+.text p{
+font-size:22px;
+margin-top:10px;
+color:#cbd5e1;
+}
+
+/* BUTTON */
+
+.site-btn{
+margin-top:25px;
+display:inline-block;
+padding:12px 30px;
+background:linear-gradient(45deg,#00ffd5,#00ff95);
+color:#020617;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+box-shadow:0 0 20px #00ffd5;
+}
+
+/* FIREWORK */
+
+.firework{
+position:absolute;
+width:6px;
+height:6px;
+border-radius:50%;
+animation:boom 1.5s ease-out forwards;
+}
+
+@keyframes boom{
+0%{transform:scale(0);opacity:1}
+100%{transform:scale(25);opacity:0}
+}
+
+/* SHOW */
+
+.show-moon{opacity:1}
+
+.show-mosque{
+bottom:0;
+}
+
+.show-text{
+bottom:40%;
+opacity:1;
+}
+
+.hide{
+opacity:0;
+pointer-events:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- AUDIO -->
+<audio id="music" loop>
+<source src="eid.mp3" type="audio/mp3">
+</audio>
+
+<!-- START -->
+<div class="start" id="start">
+<h1>Hi 🤭</h1>
+<button onclick="start()">press the button</button>
+</div>
+
+<!-- SKY -->
+<div class="stars" id="stars"></div>
+
+<!-- MOON -->
+<div class="moon" id="moon"></div>
+
+<!-- MOSQUE -->
+<div class="mosque" id="mosque"></div>
+
+<!-- COW -->
+<div class="cow"></div>
+
+<!-- TEXT -->
+<div class="text" id="text">
+<h1>Eid Mubarak</h1>
+<p>May Allah bring peace and happiness</p>
+
+<a class="site-btn" href="https://madsaif.com" target="_blank">
+Visit Our Website
+</a>
+
+</div>
+
+<script>
+
+/* STARS */
+let stars=document.getElementById("stars");
+
+for(let i=0;i<250;i++){
+let s=document.createElement("div");
+s.className="star";
+s.style.top=Math.random()*100+"%";
+s.style.left=Math.random()*100+"%";
+s.style.animationDuration=(Math.random()*3+2)+"s";
+stars.appendChild(s);
+}
+
+/* START */
+
+function start(){
+
+document.getElementById("music").play();
+
+document.getElementById("start").classList.add("hide");
+
+/* moon */
+setTimeout(()=>{
+document.getElementById("moon").classList.add("show-moon");
+},500);
+
+/* mosque highlight */
+setTimeout(()=>{
+document.getElementById("mosque").classList.add("show-mosque");
+},1200);
+
+/* text */
+setTimeout(()=>{
+document.getElementById("text").classList.add("show-text");
+},2500);
+
+/* fireworks */
+setInterval(firework,300);
+
+}
+
+/* FIREWORK */
+
+function firework(){
+
+let f=document.createElement("div");
+f.className="firework";
+f.style.left=Math.random()*window.innerWidth+"px";
+f.style.top=Math.random()*window.innerHeight+"px";
+f.style.background=`hsl(${Math.random()*360},100%,70%)`;
+
+document.body.appendChild(f);
+
+setTimeout(()=>f.remove(),1500);
+}
+
+</script>
+
+</body>
+</html>
