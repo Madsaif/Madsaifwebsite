@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadSaif • Games</title>
+    <meta name="description" content="Play Flappy Bird, Snake, Tic Tac Toe in neon style. Free upcoming APKs.">
+    <meta name="keywords" content="MadSaif games, browser games, web games, snake game, flappy bird, tic tac toe, HTML CSS JavaScript games, online arcade games, responsive web games, free browser games, indie game studio, retro arcade games, interactive games, lightweight web games, mobile friendly games">
+    <meta name="author" content="Muhammad Saifullah Mahin">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="ms.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-container">
+        <div class="logo"><img src="ms.jpg" class="logo-img"><div class="logo-text">Mad<span>Saif</span></div></div>
+        <div class="header-actions"><div class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></div></div>
+        <nav><ul id="navMenu"><li><a href="index.html" class="nav-link" data-page="index">Home</a></li><li><a href="apps.html" class="nav-link" data-page="apps">Apps</a></li><li><a href="games.html" class="nav-link active" data-page="games">Games</a></li><li><a href="about.html" class="nav-link" data-page="about">About</a></li><li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li></ul></nav>
+    </div>
+</header>
+
+<section class="page-section" style="padding-top:140px">
+    <div class="container">
+        <div class="section-title">
+            <h2>Arcade <span class="neon-pink">Neon</span> <span class="neon-yellow">Playground</span></h2>
+            <p>Classic games recharged with futuristic energy</p>
+        </div>
+        <div class="apps-grid"> <!-- Reusing same grid style as apps -->
+            <!-- Flappy Bird Card -->
+            <a href="flappybird.html" class="app-card">
+                <div class="app-card-img-wrapper">
+                    <i class="fas fa-dove" style="font-size: 48px; color: var(--pink);"></i>
+                </div>
+                <h3>Flappy Bird</h3>
+                <p>Tap to fly through neon pipes. Addictive retro action.</p>
+                <span class="app-card-link">Play Now <i class="fas fa-arrow-right"></i></span>
+            </a>
+            <!-- Snake Card -->
+            <a href="snake.html" class="app-card">
+                <div class="app-card-img-wrapper">
+                    <i class="fa-solid fa-staff-snake" style="font-size: 48px; color: var(--pink);"></i>
+                </div>
+                <h3>Snake</h3>
+                <p>Classic snake game with glowing trail & speed boost.</p>
+                <span class="app-card-link">Play Now <i class="fas fa-arrow-right"></i></span>
+            </a>
+            <!-- Tic Tac Toe Card -->
+            <a href="tictactoe.html" class="app-card">
+                <div class="app-card-img-wrapper">
+                    <i class="fas fa-hashtag" style="font-size: 48px; color: var(--pink);"></i>
+                </div>
+                <h3>Tic Tac Toe</h3>
+                <p>Two-player mind duel with futuristic UI.</p>
+                <span class="app-card-link">Play Now <i class="fas fa-arrow-right"></i></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-container">
+            <div class="footer-about"><div class="footer-logo">Mad<span>Saif</span></div><p>We build smart software solutions that help businesses grow and succeed in the digital age.</p></div>
+            <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="apps.html">Apps</a></li><li><a href="games.html">Games</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div class="footer-contact"><h4>Contact Info</h4><p><i class="fas fa-envelope"></i> info.madsaif@gmail.com</p><p><i class="fas fa-phone"></i> +880 1828-252041</p><p><i class="fas fa-map-marker-alt"></i> Dinajpur, Bangladesh</p></div>
+        </div>
+        <div class="copyright"><p>&copy; <span id="currentYear"></span> Madsaif. All Rights Reserved.</p></div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

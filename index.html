@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadSaif</title>
+    <meta name="description" content="MadSaif builds premium apps, immersive games, and smart software. Founded by Muhammad Saifullah Mahin.">
+    <meta name="keywords" content="MadSaif, software company, game development studio, app development company, browser games, web apps, futuristic technology, software solutions, HTML CSS JavaScript apps, online games, digital innovation, startup software company, modern web applications, indie game studio, mobile apps, web games, software development, interactive applications,
+				Madsaif, gaming, apps, tech studio, flappy bird, snake game, tic tac toe,MadSaif, MadSaif software company, MadSaif games, MadSaif apps, software company, game development studio, browser games, web games, app development company, HTML CSS JavaScript projects, online games, indie game studio, futuristic technology company, software solutions, modern web applications, startup software company, digital innovation, responsive web apps, mobile friendly apps, browser based games, online arcade games, snake game, flappy bird, tic tac toe, task manager app, business manager app, mess tracker app, productivity tools, management software, lightweight applications, interactive games, web development, frontend development, JavaScript games, creative software studio, futuristic UI design, digital products, SaaS startup, smart applications, technology startup, gaming company, innovative software solutions, custom web apps, software engineering, modern gaming platform, app studio, online entertainment, responsive design, premium web experience, modern technology brand, Muhammad Saifullah Mahin, CEO Mahin">
+    <meta name="author" content="Madsaif">
+    <link rel="shortcut icon" href="ms.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container header-container">
+        <div class="logo"><img src="ms.jpg" alt="MadSaif Logo" class="logo-img"><div class="logo-text">Mad<span>Saif</span></div></div>
+        <div class="header-actions"><div class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></div></div>
+        <nav><ul id="navMenu"><li><a href="index.html" class="nav-link active" data-page="index">Home</a></li><li><a href="apps.html" class="nav-link" data-page="apps">Apps</a></li><li><a href="games.html" class="nav-link" data-page="games">Games</a></li><li><a href="about.html" class="nav-link" data-page="about">About</a></li><li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li></ul></nav>
+    </div>
+</header>
+<main>
+    <section class="hero home-hero">
+        <canvas id="particleCanvas" class="particle-canvas"></canvas>
+        <div class="container hero-container">
+            <div class="hero-glow"></div>
+            <div class="hero-content">
+                <div class="hero-badge">⚡ Software Company </div>
+                <h1>Where <span class="neon-pink">innovation</span> meets <span class="neon-yellow">imagination</span></h1>
+                <div class="typing-wrapper"><span class="static-text">We build </span><span class="typing-text" id="typingText"></span></div>
+                <p class="hero-desc">Premium mobile apps • Immersive games • Futuristic software solutions.</p>
+                <div class="hero-btns"><a href="apps.html" class="btn btn-primary btn-glow">Explore Apps <i class="fas fa-arrow-right"></i></a><a href="games.html" class="btn btn-outline-neon">Play Games <i class="fas fa-gamepad"></i></a></div>
+            </div>
+        </div>
+    </section>
+    <section class="overview-section fade-up">
+        <div class="container">
+            <div class="section-title"><h2>Digital <span class="neon-pink">ecosystem</span></h2><p>Tools & experiences crafted with precision, speed, and futuristic design.</p></div>
+            <div class="overview-grid">
+                <div class="overview-card glass-card"><div class="overview-icon"><i class="fas fa-mobile-alt"></i></div><h3>Premium Apps</h3><p>MessTracker, Business Manager, Task Manager — productivity on steroids.</p><a href="apps.html" class="btn btn-sm btn-outline-neon">Discover <i class="fas fa-chevron-right"></i></a></div>
+                <div class="overview-card glass-card"><div class="overview-icon"><i class="fas fa-dice-d6"></i></div><h3>Immersive Games</h3><p>Classic arcade reimagined: Flappy Bird, Snake, Tic Tac Toe — neon style.</p><a href="games.html" class="btn btn-sm btn-outline-neon">Play now <i class="fas fa-gamepad"></i></a></div>
+                <div class="overview-card glass-card"><div class="overview-icon"><i class="fas fa-crown"></i></div><h3>Founder-led vision</h3><p>Muhammad Saifullah Mahin — turning creative code into reality.</p><a href="founder.html" class="btn btn-sm btn-outline-neon">Meet CEO <i class="fas fa-user-astronaut"></i></a></div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer-container">
+            <div class="footer-about"><div class="footer-logo">Mad<span>Saif</span></div><p>We build smart software solutions that help businesses grow and succeed in the digital age.</p></div>
+            <div class="footer-links"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="apps.html">Apps</a></li><li><a href="games.html">Games</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+            <div class="footer-contact"><h4>Contact Info</h4><p><i class="fas fa-envelope"></i> info.madsaif@gmail.com</p><p><i class="fas fa-phone"></i> +880 1828-252041</p><p><i class="fas fa-map-marker-alt"></i> Dinajpur, Bangladesh</p></div>
+        </div>
+        <div class="copyright"><p>&copy; <span id="currentYear"></span> Madsaif. All Rights Reserved.</p></div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
